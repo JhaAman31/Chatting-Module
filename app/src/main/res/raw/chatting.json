@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "profile_pic": "https://example.com/images/alice.jpg",
+      "status": "Online"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "profile_pic": "https://example.com/images/bob.jpg",
+      "status": "Offline"
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "profile_pic": "https://example.com/images/charlie.jpg",
+      "status": "Online"
+    }
+  ],
+  "chats": [
+    {
+      "chat_id": 101,
+      "participants": [
+        1,
+        2
+      ],
+      "messages": [
+        {
+          "sender_id": 1,
+          "message": "Hey Bob, how's it going?",
+          "timestamp": "2024-12-25T14:30:00Z",
+          "seen": true
+        },
+        {
+          "sender_id": 2,
+          "message": "Hi Alice, I'm good! How about you?",
+          "timestamp": "2024-12-25T14:32:00Z",
+          "seen": false
+        }
+      ]
+    },
+    {
+      "chat_id": 102,
+      "participants": [
+        1,
+        3
+      ],
+      "messages": [
+        {
+          "sender_id": 3,
+          "message": "Merry Christmas, Alice!",
+          "timestamp": "2024-12-25T10:00:00Z",
+          "seen": true
+        },
+        {
+          "sender_id": 1,
+          "message": "Merry Christmas, Charlie! 🎄",
+          "timestamp": "2024-12-25T10:05:00Z",
+          "seen": true
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "group_id": 201,
+      "group_name": "Family Chat",
+      "participants": [
+        1,
+        2,
+        3
+      ],
+      "messages": [
+        {
+          "sender_id": 1,
+          "message": "Merry Christmas everyone!",
+          "timestamp": "2024-12-25T09:00:00Z",
+          "seen_by": [
+            2,
+            3
+          ]
+        },
+        {
+          "sender_id": 2,
+          "message": "Merry Christmas, Alice and Charlie!",
+          "timestamp": "2024-12-25T09:05:00Z",
+          "seen_by": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}
